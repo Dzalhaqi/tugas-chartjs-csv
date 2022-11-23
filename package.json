@@ -1,0 +1,19 @@
+{
+  "name": "projek-uas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "tail": "npx tailwindcss -i input.css -o output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@sgratzl/chartjs-chart-boxplot": "^3.10.0",
+    "chartjs-chart-geo": "^3.10.0"
+  }
+}

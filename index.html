@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"
+      integrity="sha512-d6nObkPJgV791iTGuBoVC9Aa2iecqzJRE0Jiqvk85BhLHAPhWqkuBiQb1xz2jvuHNqHLYoN3ymPfpiB1o+Zgpw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@sgratzl/chartjs-chart-boxplot@3.6.0/build/index.umd.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo@3.10.0/build/index.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <title>Dashboard TokoKita</title>
+  </head>
+
+  <body>
+
+    <div class="outer-wrapper flex justify-center flex-wrap">
+      <h1 class="font-bold text-4xl mt-16 text-center max-w-5xl">
+        Dashboard Analisa Data TokoKita
+      </h1>
+      <div class="dashboard w-11/12 lg:w-full flex justify-center my-16">
+        <div class="wrapper bg-[#fafafa] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-6 rounded-lg max-w-5xl w-full">
+          <div class="flex mx-auto my-10">
+            <canvas id="barChart-canvas"></canvas>
+          </div>
+          <div class="flex mx-auto my-5">
+            <canvas id="lineChart-canvas" class="h-3xl"></canvas>
+          </div>
+          <div class="flex flex-wrap justify-center my-5">
+            <div class="flex w-96 mx-auto my-5">
+              <canvas id="pieChart-canvas"></canvas>
+            </div>
+            <div class="flex max-w-lg mx-auto my-5">
+              <canvas id="donutChart-canvas"></canvas>
+            </div>
+          </div>
+          <div class="flex max-w-lg mx-auto my-5">
+            <canvas id="boxplot-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
