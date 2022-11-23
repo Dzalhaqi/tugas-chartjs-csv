@@ -266,7 +266,7 @@ function makeDonutChart(data) {
 }
 
 
-d3.csv('Tokokita_clean.csv', function (error, data) {
+d3.csv('../Tokokita_clean.csv', function (error, data) {
   if (error) throw error;
 
   // Data preprocessing untuk barchart
@@ -382,7 +382,7 @@ d3.csv('Tokokita_clean.csv', function (error, data) {
 });
 
 
-d3.csv('Tokokita_cluster.csv', function (error, data) {
+d3.csv('../Tokokita_cluster.csv', function (error, data) {
   if (error) throw error;
 
   // preprocessing data untuk donut chart
